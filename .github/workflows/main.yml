@@ -44,5 +44,5 @@ jobs:
             --platform linux/arm64 \
             --output "type=image,push=true" \
             --tag xedonev/drone-plugin-kaniko-arm:${{ steps.vars.outputs.tag }} \
-            --file ./docker/docker/Dockerfile.linux.arm64
+            --file ./docker/docker/Dockerfile.linux.arm64 ./
 
